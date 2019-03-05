@@ -4,20 +4,20 @@
              xmlns:local="clr-namespace:XFGridSpan"
              x:Class="XFGridSpan.MainPage">
 
-<Grid>
-    <Grid.ColumnDefinitions>
-        <ColumnDefinition Width="*" />
-        <ColumnDefinition Width="*" />
-    </Grid.ColumnDefinitions>
-    <BoxView BackgroundColor="#0894A1" Grid.ColumnSpan="2" 
-             HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
-    <BoxView BackgroundColor="#47AB6C" Grid.Column="1" 
-             HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
-    <Frame BackgroundColor="#ED553B" WidthRequest="80" HeightRequest="80" Grid.ColumnSpan="2" 
-           HorizontalOptions="Center" VerticalOptions="Center">
-        <Label LineBreakMode="WordWrap" Text="This box should be centered" 
-                HorizontalTextAlignment="Center" VerticalOptions="Center" />
-    </Frame>
-</Grid>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <BoxView BackgroundColor="#0894A1" Grid.ColumnSpan="2" 
+                HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+        <BoxView BackgroundColor="#47AB6C" Grid.Column="1" Grid.ColumnSpan="2"
+                HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+        <Frame BackgroundColor="#ED553B" WidthRequest="80" HeightRequest="80" Grid.ColumnSpan="2" 
+            HorizontalOptions="Center" VerticalOptions="Center">
+            <Label LineBreakMode="WordWrap" Text="This box should be centered" 
+                    HorizontalTextAlignment="Center" VerticalOptions="Center" />
+        </Frame>
+    </Grid>
 
 </ContentPage>
