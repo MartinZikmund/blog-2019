@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GridSpacing"
+             x:Class="GridSpacing.MainPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <BoxView BackgroundColor="#f65d35" />
+        <BoxView BackgroundColor="#81bb05" Grid.Row="0" Grid.Column="1" />
+        <BoxView BackgroundColor="#04a5f0" Grid.Row="1" Grid.Column="0" />
+        <BoxView BackgroundColor="#ffba07" Grid.Row="1" Grid.Column="1" />
+    </Grid>
+
+</ContentPage>
