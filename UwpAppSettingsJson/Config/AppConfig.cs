@@ -18,7 +18,7 @@ namespace UwpAppSettingsJson.Config
             var builder = new ConfigurationBuilder()
                 .SetBasePath(Package.Current.InstalledLocation.Path)
                 .AddJsonFile("appsettings.json", optional: false)
-                .AddJsonFile("appsettings.debug.json", optional: true);
+                .AddJsonFile("appsettings.production.json", optional: true);
 
             _configurationRoot = builder.Build();
         }
